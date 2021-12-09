@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Basics</title>
+  </head>
+  <body>
+    <header>
+      <h1>Grid Basics - Wie funktioniert Grid?</h1>
+    </header>
+    <main>
+      <h2>Was ist eine Fraktion?</h2>
+      <section class="grid-container1">
+          <div class="grid-item">Dieser Container nimmt 2 Fraktionen ein</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">Dieser Container nimmt 2 Fraktionen ein</div>
+          <div class="grid-item">4</div>
+      </section>
+      <section>
+        <article>
+          <h3>Grid arbeitet mit verschiedenen Einheiten</h3>
+          <p>
+          px : Ist eine feste Größe, die sich nicht ändert/anpasst. <br><br>
+          % : Ist die Prozentuale größe des Abschnittes innerhalb des Eltern-Elementes.<br><br>
+          fr : Eine Fraktion bezieht sich auf den zur Verfügung stehenden Platz.
+          So nimmt sich 1fr alleine immer der Gesamte Container, während sich 2fr 1fr die
+          Platz untereinander aufteilen 2:1 (Gesamt 3 Teile) 100%/3 und dem ersten
+          fr gehören 2 Anteile (2fr), während dem hinteren fr nur 1 Anteil gehört (1fr).<br><br>
+          auto : Bei dieser Funktion
+          </p>
+        </article>
+      </section>
+      <h2>Die Funktion: repeat</h2>
+      <section class="grid-container2">
+        <div class="grid-item">Dieser Container nimmt 2 Fraktionen ein</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">Dieser Container nimmt 2 Fraktionen ein</div>
+        <div class="grid-item">4</div>
+      </section>
+      <h2>Die Funktion: minmax</h2>
+      <section class="grid-container3">
+        <div class="grid-item">Dieser Container nimmt 2 Fraktionen ein</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">Dieser Container nimmt 2 Fraktionen ein</div>
+        <div class="grid-item">4</div>
+      </section>
+      <section>
+        <article>
+          <h3>Die minmax Funktion Leicht erklärt</h3>
+          <p>
+            Die minmax Funktion ist die grid version von shrink und grow. <br><br>
+            Analysieren wir mal den genauen Command:<br>
+            grid-template-rows: minmax(Minbreite, Maxbreite in fr) Alle weiteren fr;<br>
+            grid-template-rows: <span>minmax(100px, 1fr) 1fr 2fr;</span><br>
+            Wenn eine Seite auf 3 Spalten besteht, die erste sich aber auf dem Desktop verbreitern soll
+            und auf dem Handy zusammenschieben, dann benutzt man minmax.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

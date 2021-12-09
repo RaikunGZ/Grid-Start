@@ -1,0 +1,64 @@
+:root
+{
+  font-size: 62,5%;
+}
+* 
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body
+{
+  font-family: sans-serif;
+  margin-top: 20px;
+  padding: 0rem 2rem;
+}
+
+header
+{
+  padding: 3rem;
+  border: 1px solid;
+}
+
+/* GRID CONTAINER 1*/
+
+.grid-container1
+{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 600px;
+  height: 400px;
+  margin: 15px;
+  border: solid 3px red;
+}
+
+div
+{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+/* GRID CONTAINER 2*/
+
+.grid-container2
+{
+  display: grid;
+  grid-template-columns: repeat(2fr, 1fr);
+  grid-template-rows: minmax(100px ,           1fr) 1fr 2fr;
+  width: 600px;
+  height: 400px;
+  margin: 15px;
+  border: solid 3px red;
+}
+
+  span
+  {
+    color: rgb(255, 136, 0);
+    letter-spacing: 0.3rem;
+    font-weight: bolder;
+  }
